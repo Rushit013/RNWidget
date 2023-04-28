@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.RNWidget.AppWidget.Container"
+    android:layout_width="140dp"
+    android:layout_height="140dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="3dp"
+    android:paddingStart="3dp"
+    android:paddingEnd="3dp"
+    android:background="@drawable/widget_canvas"
+    android:theme="@style/AppTheme.AppWidgetContainer">
+
+    <LinearLayout
+        android:id="@+id/streak_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:paddingTop="3dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/streak"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="123 days"
+            android:textColor="#ff9600"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+           />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/way_to_go"
+        android:layout_below="@+id/streak_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Way to go!"
+        android:textColor="#afafaf"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/duo"
+        />
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/appwidget_text"-->
+<!--        style="@style/Widget.RNWidget.AppWidget.InnerView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_margin="8dp"-->
+<!--        android:contentDescription="@string/appwidget_text"-->
+<!--        android:text="@string/appwidget_text"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="bold|italic" />-->
+</LinearLayout>
