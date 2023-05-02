@@ -4,6 +4,10 @@ import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
 import android.widget.RemoteViews;
+import android.content.SharedPreferences;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 /**
  * Implementation of App Widget functionality.
@@ -13,13 +17,16 @@ public class StreakWidget extends AppWidgetProvider {
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int appWidgetId) {
 
-        CharSequence widgetText = context.getString(R.string.appwidget_text);
-        // Construct the RemoteViews object
-        RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.streak_widget);
-//        views.setTextViewText(R.id.appwidget_text, widgetText);
-
-        // Instruct the widget manager to update the widget
-        appWidgetManager.updateAppWidget(appWidgetId, views);
+        try {
+            SharedPreferences sharedPref = context.getSharedPreferences("DATA", Context.MODE_PRIVATE);
+            String appString = sharedPref.getString("appData", "{\"text\":'no data'}");
+            JSONObject appData = new JSONObject(appString);
+            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.streak_widget);
+            views.setTextViewText(R.id.appwidget_text, appData.getString("text"));
+            appWidgetManager.updateAppWidget(appWidgetId, views);
+        }catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
