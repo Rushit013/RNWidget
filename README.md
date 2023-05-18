@@ -17,4 +17,4 @@ You can start by cloning this repository
 
 ## Output
 
-![Output](https://github-production-user-asset-6210df.s3.amazonaws.com/60570262/239142180-44f667c9-fd64-448d-9ca1-acd69c0fb2b0.gif)
+https://github-production-user-asset-6210df.s3.amazonaws.com/60570262/239141566-452644de-93d0-4420-8657-6042140eaebb.mp4
