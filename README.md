@@ -17,4 +17,4 @@ You can start by cloning this repository
 
 ## Output
 
-![Imgur](https://miro.medium.com/v2/resize:fit:640/0*QrlpXWD4xd0wQzIo.gif)
+![Output](https://github-production-user-asset-6210df.s3.amazonaws.com/60570262/239142180-44f667c9-fd64-448d-9ca1-acd69c0fb2b0.gif)
