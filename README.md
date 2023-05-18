@@ -17,4 +17,4 @@ You can start by cloning this repository
 
 ## Output
 
-https://github-production-user-asset-6210df.s3.amazonaws.com/60570262/239141566-452644de-93d0-4420-8657-6042140eaebb.mp4
+https://github.com/Rushit013/RNWidget/assets/60570262/4163859a-38e8-4d1a-9365-80e017029ff4
